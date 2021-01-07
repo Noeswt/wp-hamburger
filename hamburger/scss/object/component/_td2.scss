@@ -1,0 +1,7 @@
+.c-td2 {
+    width: 65%;
+
+    @include sp {
+        width: 60%;
+    };
+}

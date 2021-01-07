@@ -1,0 +1,109 @@
+.p-header {
+    height: 217px;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+
+    @include tab {
+        display: inline-block;
+        width: 100%;
+		text-align: center;
+		position: relative;
+    };
+    @include sp {
+
+	};
+	
+	&__menu {
+		display: none;
+
+		@include tab {
+			display: inline;
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			font-size: 34px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			color: $title;
+		};
+		@include sp {
+			top: 20px;
+			right: 20px;
+			font-size: 25px;
+		};
+	}
+
+    &__left {
+		margin-left: 65px;
+
+		@include tab {
+			margin: 45px 0;
+		};
+		@include sp {
+	
+		};
+
+        &__ttl {
+			display: inline-block;
+            font-size: 3rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+			color: $title;
+			
+			@include tab {
+				font-size: 3rem;
+			};
+			@include sp {
+				font-size: 3rem;
+			};
+        }
+    }
+
+    &__right {
+		margin-right: 30px;
+		
+		@include tab {
+			margin: 0;
+		};
+		@include sp {
+	
+		};
+
+        .p-searchForm {
+
+			.screen-reader-text {
+				display: none;
+			}
+			
+            &__keyword {
+                width: 250px;
+                height: 36px;
+                border: 1px solid $title;
+				border-radius: .5rem;
+				
+				@include tab {
+					width: 50%;
+				};
+				@include sp {
+			
+				};
+            }
+
+            &__submit {
+                width: 110px;
+                line-height: 36px;
+                font-weight: normal;
+                color: $title;
+                background-color: $menu;
+                border: 1px solid $title;
+                border-radius: .5rem;
+				font-family: 'M PLUS 1p', sans-serif;
+				
+				&:hover {
+					cursor: pointer;
+				}
+            }
+        }
+    }
+}

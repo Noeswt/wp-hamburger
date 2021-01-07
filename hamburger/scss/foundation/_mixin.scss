@@ -1,0 +1,28 @@
+$tab: 960px;
+$mainContents: 760px;
+$sp: 560px;
+
+@mixin tab {
+    @media (max-width: $tab) {
+        @content;
+    }
+}
+
+@mixin mainContents {
+    @media (max-width: $mainContents) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: $sp) {
+        @content;
+    }
+}
+
+@include tab {
+
+};
+@include sp {
+
+};

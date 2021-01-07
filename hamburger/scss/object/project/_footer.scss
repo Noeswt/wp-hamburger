@@ -1,0 +1,30 @@
+.p-footer {
+    font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+
+    li {
+        list-style: none;
+    }
+
+    .menu-footermenu-container {
+        margin-bottom: 20px;
+        
+        a {
+            color: $white;           
+        }
+    }
+
+    .menu {
+        display: flex;
+
+        .menu-item-86 {
+            &::after {
+                content: "|";
+            }
+        }
+    }
+
+    small {
+        font-size: 14px;
+    }
+}

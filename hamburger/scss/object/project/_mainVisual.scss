@@ -1,0 +1,50 @@
+.p-mainVisual {
+    position: relative;
+
+    .wp-post-image {
+        width: 100%;
+        object-fit: cover;
+        height: 285px;
+        vertical-align: bottom;
+
+        @include tab {
+            min-height: 211px;
+		};
+		@include sp {
+	
+		};
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        min-height: 285px;
+        vertical-align: bottom;
+
+        @include tab {
+            min-height: 211px;
+		};
+		@include sp {
+	
+		};
+    }
+
+    &__ttl {
+        position: absolute;
+        top: 50%;
+        left: 86px;
+        transform: translateY(-50%);
+        font-size: 40px;
+        color: $white;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: normal;
+
+        @include tab {
+
+		};
+		@include sp {
+            font-size: 35px;
+            left: 30px;
+		};
+    }
+}

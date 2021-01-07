@@ -1,0 +1,13 @@
+.l-main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+
+    @include tab {
+
+    };
+    @include sp {
+
+    };
+}

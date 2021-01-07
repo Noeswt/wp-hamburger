@@ -1,0 +1,61 @@
+.p-sidebar {
+
+    &__btn {
+        position: absolute;
+        top: 25px;
+        right: 55px;
+        font-size: 50px;
+        font-weight: 500;
+        color: $title;
+        display: none;
+
+        @include tab {
+            display: block;
+        };
+        @include sp {
+            top: 10px;
+            right: 45px;
+        };
+    }
+
+    &__ttl {
+        font-size: 30px;
+        margin: 93.5px 0;
+        font-family: 'Roboto', sans-serif;
+        color: $title;
+        font-weight: bold;
+
+        a {
+            color: $title;
+        }
+
+        @include tab {
+            visibility: hidden;
+        };
+        @include sp {
+        
+        };
+    }
+
+    & .menu-item {
+        margin-bottom: 50px;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 20px;
+        color: $title;        
+        
+        a {
+            color: $title;
+        }
+
+        & .sub-menu {
+            li {
+                margin: 20px 0 0 20px;
+                
+                a {
+                    font-size: 13px;
+                    color: $title;
+                }
+            }
+        }
+    }
+}

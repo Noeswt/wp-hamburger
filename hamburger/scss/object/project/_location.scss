@@ -1,0 +1,70 @@
+.p-location {
+    position: relative;
+    
+    img {
+        width: 100%;
+        height: 649px;
+        object-fit: cover;
+        vertical-align: bottom;
+        background-color: rgba($color: $black, $alpha: .8);
+
+        @include tab {
+            
+        };
+        @include mainContents {
+            
+        };
+        @include sp {
+            height: 691px;
+        };
+    }
+
+    &__inner {
+        color: $white;
+        width: 70%;
+        height: 649px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 100px;
+        box-sizing: border-box;
+        background-color: rgba($color: $black, $alpha: .4);
+        font-family: 'M PLUS 1p', sans-serif;
+
+        @include tab {
+            width: 100%;
+        };
+        @include mainContents {
+
+        };
+        @include sp {
+            padding: 50px;
+            height: 450px;
+        };
+
+        h4 {
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+        span {
+            font-size: 6rem;
+            font-weight: 100;
+        }
+
+        p {
+            line-height: 2;
+            font-size: 1vw;
+
+            @include tab {
+                font-size: 1.5vw;
+            };
+            @include mainContents {
+                font-size: 2vw;
+            };
+            @include sp {
+                font-size: 2.5vw;
+            };
+        }
+    }
+}

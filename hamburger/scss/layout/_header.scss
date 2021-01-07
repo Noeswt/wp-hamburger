@@ -1,0 +1,12 @@
+.l-header {
+    width: 100%;
+    background-color: $top;
+
+    @include tab {
+
+    };
+    @include sp {
+
+    };
+}
+                    

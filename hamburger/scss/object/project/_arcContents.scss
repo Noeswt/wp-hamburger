@@ -1,0 +1,99 @@
+.p-arcContents {
+
+    h3 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: normal;
+        font-family: 'M PLUS 1p', sans-serif;
+    }
+
+    p {
+        font-family: 'M PLUS 1p', sans-serif;
+        line-height: 1.5;
+        margin-bottom: 60px;
+    }
+
+    &__inner {
+        &__box {
+            display: flex;
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+
+            @include mainContents {
+                display: block;
+            };
+
+            img {
+                width: 50%;
+                object-fit: cover;
+                height: 400px;
+
+                @include mainContents {
+                    width: 100%;
+                    vertical-align: bottom;
+                };
+            }
+
+            &__right {
+                width: 50%;
+                padding: 30px;
+                box-sizing: border-box;
+                background-color: $box;
+                color: $white;
+
+                @include tab {
+
+                };
+                @include mainContents {
+                    width: 100%;
+                };
+
+                &__txt {
+                    margin-bottom: 60px;
+                    text-align: left;
+
+                    h2 {
+                        margin-bottom: 30px;
+                    }
+
+                    h3 {
+                        font-size: 1.8vw;
+
+                        @include tab {
+                            font-size: 2.5vw;
+                        };
+                        @include mainContents {
+                            font-size: 4vw;
+                        };
+                    }
+
+                    h4 {
+                        margin-bottom: 15px;
+                        font-weight: normal;
+                        font-size: 1.3vw;
+
+                        @include tab {
+                            font-size: 2vw;
+                        };
+                        @include mainContents {
+                            font-size: 3vw;
+                        };
+                    }
+
+                    p {
+                        font-size: 1vw;
+                        margin: 0;
+
+                        @include tab {
+                            font-size: 1.5vw;
+                        };
+                        @include mainContents {
+                            font-size: 2vw;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}

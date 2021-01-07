@@ -1,0 +1,7 @@
+.c-td1 {
+    width: 35%;
+
+    @include sp {
+        width: 40%;
+    };
+}

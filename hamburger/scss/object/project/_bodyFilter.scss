@@ -1,0 +1,21 @@
+.p-bodyFilter {
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+
+    position: fixed;
+
+    @include tab {
+        &.bfilter {
+            display: block;
+            opacity: 0.5;
+            transition: all .5s;
+        }
+    };
+}
