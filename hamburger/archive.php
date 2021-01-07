@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
             <section class="p-subVisual">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/head.png" alt="">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/head.png" alt="">
                 <h2 class="p-subVisual__ttl"><strong>Menu:</strong><?php single_cat_title(); ?></h2>
             </section>
             

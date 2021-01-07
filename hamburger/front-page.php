@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
             <section class="p-mainVisual">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/3ba5a44414bb3c0885c27ff614596431.png" alt="">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/3ba5a44414bb3c0885c27ff614596431.png" alt="">
                 <h2 class="p-mainVisual__ttl">ダミーサイト</h2>
             </section>
 
@@ -9,7 +9,7 @@
 
                 <div class="p-mainContents__box">
                     <a href="<?php echo get_category_link( '2' ); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/takeout.png" alt="#">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/takeout.png" alt="#">
                         <div class="p-mainContents__box__inner">
                             <div class="p-mainContents__box__inner__top">
                                 <h3>Take Out</h3>
@@ -38,7 +38,7 @@
                 
                 <div class="p-mainContents__box">  
                     <a href="<?php echo get_category_link( '3' ); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/eatin.png" alt="#">                    
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eatin.png" alt="#">                    
                         <div class="p-mainContents__box__inner">
                             <div class="p-mainContents__box__inner__top">
                                 <h3>Eat In</h3>
@@ -67,7 +67,7 @@
             </section>
 
             <section class="p-location">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/location.png" alt="">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/location.png" alt="">
                 <div class="p-location__inner">
                     <h4>見出しが入ります</h4>
                     <span>ー</span>
