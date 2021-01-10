@@ -7,7 +7,7 @@
 </head>
 
 
-<body>
+<body <?php body_class(); ?><?php wp_body_open(); ?>>
     <div class="p-bodyFilter"></div>
     <main class="l-main">
         <div class="l-container">
@@ -20,11 +20,7 @@
                         </a>
                     </div>
                     <div class="p-header__right">
-                        <form class="p-searchForm">
-                            <label class="screen-reader-text" for="s"></label>
-                            <input type="text" class="p-searchForm__keyword" value="" name="s" id="s" placeholder="&#xF002; キーワードを入力" style="font-family:Arial, FontAwesome">
-                            <input class="p-searchForm__submit" type="submit" id="searchsubmit" value="検索">
-                        </form>
+                        <?php get_search_form(); ?>
                     </div>
                 </div>
             </header>

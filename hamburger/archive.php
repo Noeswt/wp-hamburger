@@ -41,6 +41,7 @@
 
                 <div class="p-page">
                     <?php wp_pagenavi(); ?>
+                    <?php wp_link_pages(); ?>
                 </div>
             </div>
         </div>

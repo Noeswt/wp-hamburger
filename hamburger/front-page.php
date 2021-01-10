@@ -8,7 +8,7 @@
             <section class="p-mainContents">
 
                 <div class="p-mainContents__box">
-                    <a href="<?php echo get_category_link( '2' ); ?>">
+                    <a href="<?php echo get_category_link( '3' ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/takeout.png" alt="#">
                         <div class="p-mainContents__box__inner">
                             <div class="p-mainContents__box__inner__top">
@@ -37,7 +37,7 @@
                     
                 
                 <div class="p-mainContents__box">  
-                    <a href="<?php echo get_category_link( '3' ); ?>">
+                    <a href="<?php echo get_category_link( '2' ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/eatin.png" alt="#">                    
                         <div class="p-mainContents__box__inner">
                             <div class="p-mainContents__box__inner__top">
